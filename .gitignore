@@ -1,0 +1,82 @@
+# ========================== 通用前端/Node.js相关 ==========================
+# node_modules依赖（核心，必加）
+node_modules/
+# npm/yarn/pnpm的锁文件（可选：如果团队统一包管理工具，可保留一个，其余忽略；建议忽略，避免冲突）
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+# npm日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# 环境变量文件（包含数据库、接口地址、密钥等敏感信息，必加）
+.env
+.env.*
+!.env.example # 保留示例文件
+# 构建/打包产物
+dist/
+build/
+# 临时文件
+tmp/
+temp/
+# ========================== UniApp框架专属 ==========================
+# UniApp编译生成的小程序/APP/ H5产物（核心，必加）
+unpackage/
+# UniApp本地配置（包含个性化编译路径、模拟器配置等）
+uni.prompts.json
+# HBuilderX编辑器的缓存/配置（如果使用HBuilderX开发）
+.hbuilderx/
+# 小程序开发者工具的缓存
+.miniprogram/
+# ========================== 小程序平台专属 ==========================
+# 微信小程序
+# 微信开发者工具的项目配置（个性化配置，无需提交）
+project.config.json
+# 微信开发者工具的缓存
+miniprogram_npm/
+# 支付宝小程序
+mini.project.json
+# 字节跳动小程序
+project.tt.json
+# QQ小程序
+project.qq.json
+# ========================== 编辑器/IDE相关 ==========================
+# VSCode
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+# IntelliJ IDEA/WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Vim
+*.swp
+*.swo
+# ========================== 系统相关 ==========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Linux
+*~
+# 日志文件
+*.log
+# ========================== 自定义业务相关（可选，根据项目补充） ==========================
+# 本地测试用的静态资源（如测试用电数据、临时截图）
+test-resources/
+# 本地上传的文件
+uploads/
+# lime-echart/echarts的本地缓存（如果有）
+echarts-cache/

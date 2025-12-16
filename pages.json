@@ -1,0 +1,76 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "用电监控",
+        "enablePullDownRefresh": false // 关闭下拉刷新，适配工业场景
+      }
+    },
+    {
+      "path": "pages/statistics/statistics",
+      "style": {
+        "navigationBarTitleText": "统计分析",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/alarm/alarm",
+      "style": {
+        "navigationBarTitleText": "告警提醒",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#666666", // 未选中文字颜色
+    "selectedColor": "#007AFF", // 选中文字颜色
+    "backgroundColor": "#ffffff", // TabBar背景色
+    "borderStyle": "black", // 上边框样式
+    "height": "50px", // 固定高度，适配各端
+    "fontSize": "10px", // 文字大小
+    "iconWidth": "24px", // 图标宽度
+    "list": [
+      {
+        "pagePath": "pages/index/index", // 必须与pages中的路径完全一致
+        "text": "监控",
+        "iconPath": "static/icon/monitor.png", // 未选中图标
+        "selectedIconPath": "static/icon/monitor-active.png" // 选中图标
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计",
+        "iconPath": "static/icon/statistics.png",
+        "selectedIconPath": "static/icon/statistics-active.png"
+      },
+      {
+        "pagePath": "pages/alarm/alarm",
+        "text": "告警",
+        "iconPath": "static/icon/alarm.png",
+        "selectedIconPath": "static/icon/alarm-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/icon/mine.png",
+        "selectedIconPath": "static/icon/mine-active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#007AFF",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "工厂用电监控",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#F8F8F8" // App端背景色适配
+    }
+  }
+}
